@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/fontawesome-free-6.4.2-web/css/all.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>signup</title>
+</head>
+
+<body dir="rtl">
+
+  <main class="signup-box">
+    <div class="container-small">
+      <div class="row bg-white ">
+        <div class="p-5">
+          <h2 class="m-2">تسجيل الدخول</h2>
+          <article class="row">
+            <div class="col-1"><a href="https://mostaql.com/login" target="_blank" rel="noreferrer">
+                <img src="./assets/images/logoo.png" alt="" width="50">
+              </a></div>
+            <div class="col-10">
+              <h4 class="">مستقل</h4>mostaql.com
+            </div>
+          </article>
+
+          <div class="row my-3">
+            <div class="col-md-6 col-xs-12 py-1"><a
+                href="/auth/google?source=mostaql&amp;t=424e6263f2fa72bda3b3e1e9b0465492"
+                class="text-center  w-100 btn btn-danger text-white"><span class="fa fab fa-google fa-2x"></span>
+                باستخدام
+                جوجل</a>
+            </div>
+            <div class="col-md-6 col-xs-12 py-1"><a
+                href="/auth/microsoft_office365?source=mostaql&amp;t=424e6263f2fa72bda3b3e1e9b0465492"
+                class="btn w-100 text-center  btn-primary text-white text-white"><span
+                  class="fa fab fa-microsoft fa-2x"></span>
+                باستخدام
+                مايكروسوفت</a></div>
+          </div>
+          <div class="row py-3">
+            <hr class="col-5">
+            <p class="col-2 text-center">او</p>
+            <hr class="col-5">
+          </div>
+          <div class="container-form">
+            <form autocomplete="off" enctype="application/x-www-form-urlencoded">
+              <div style="display: none;"><input type="text" autocomplete="new-password">
+                <input type="password" autocomplete="new-password">
+              </div>
+              <div class="row">
+
+                <div class="clearfix"></div>
+                <div class="col-xs-12">
+                  <div class="form-group "><label class="form-label">البريد الإلكتروني </label><input
+                      class="form-control" placeholder="أدخل البريد الإلكتروني الخاص بك" type="email" name="email"
+                      value="" fdprocessedid="0xn66s"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12">
+                  <div class="form-group  ">
+                    <label class="form-label">كلمة المرور </label>
+                    <input class="form-control" placeholder="أدخل كلمة المرور الخاصة بك" type="password" name="password"
+                      value="" fdprocessedid="bddxqr">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <div class="field checkbox c-checkbox"><label><input type="checkbox" name="terms"
+                          value="false"><span class="c-checkbox__check"></span><span class="checkbox-label">قرأت
+                          وأوافق
+                          على&nbsp;<a target="_blank" href="/terms">شروط الاستخدام</a>&nbsp;و&nbsp;<a target="_blank"
+                            href="/privacy">بيان الخصوصية</a></span></label></div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-group ">
+                    <div id="g-recaptcha">
+                      <div style="width: 304px; height: 78px;">
+                        <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-geg8s36jugs1"
+                            frameborder="0" scrolling="no"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdYzCATAAAAALIv0DPYkOIcyA4cciOSMODbsgBg&amp;co=aHR0cHM6Ly9hY2NvdW50cy5oc291Yi5jb206NDQz&amp;hl=ar&amp;type=image&amp;v=fGZmEzpfeSeqDJiApS_XZ4Y2&amp;theme=light&amp;size=normal&amp;cb=bwcitt9l5uzm"></iframe>
+                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                          class="g-recaptcha-response"
+                          style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                      </div>
+                      <iframe style="display: none;"></iframe>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-xs-12 mt-4">
+                  <button type="submit" class="mos-btn-primary w-100 rounded-1" fdprocessedid="19nm8">تسجيل</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./assets/js/bootstrap.js"></script>
+</body>
+
+</html>

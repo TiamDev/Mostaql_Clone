@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/fontawesome-free-6.4.2-web/css/all.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Add Project</title>
+</head>
+
+<body dir="rtl">
+  <header>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-9 col-md-9 d-sm-none d-md-none d-lg-block">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <button title="offcanvas" class="btn fs-4 text-white" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class="fa far fas fa-bars fs-4"></i></button>
+                <a class="navbar-brand" href="#"> <img src="./assets/images/mostaql-logo-white.svg" alt=""
+                    width="120px"></a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item pe-1">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-plus ms-2 "></i>أضف
+                      مشروع</a>
+                  </li>
+                  <!-- <li class="nav-item pe-1">
+                    <a class="nav-link text-white" href="#"><i class="fa far fa-folder-open ms-2 "></i>مشاريعي</a>
+                  </li> -->
+                  <li class="nav-item pe-1">
+                    <a class="nav-link text-white"><i class="fa fa-users ms-2 "></i>ابحث عن مستقلين</a>
+                  </li>
+                  <li class="nav-item pe-1">
+                    <a class="nav-link text-white"><i class="fa fa-cubes ms-2 "></i>تصفح المشاريع</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-3 d-lg-block d-md-none  d-sm-none ">
+          <div class="h-100 d-flex align-items-center justify-content-between">
+            <button title="search" class="btn text-white fs-5"><i class="fa fa-search"></i></button>
+            <button class=" btn-outline-white  "><i class="fa fa-sign-in ps-1"> </i>دخول
+            </button>
+            <button class=" btn-outline-white"> <i class=" fa fa-user-plus ps-1"></i>
+              حساب جديد</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form action="/search" accept-charset="UTF-8" class="hsoub-search-container" method="get">
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="ابحث عن ..." aria-label="Search"
+            aria-describedby="search-addon" />
+          <!-- <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span> -->
+        </div>
+        <input name="utf8" type="hidden" value="✓">
+      </form>
+
+      <ul class="offcanvas-menu p-0 mt-4">
+        <li><a href="#"><i class="fa  fa-user-plus"></i>حساب جديد</a></i></li>
+        <li><a href="#"><i class="fa fa-sign-in"></i>تسجيل الدخول </a></i></li>
+        <li><a href="#"><i class="fa fas fa-plus"></i>أضف مشروع </a></i></li>
+        <li><a href="#"><i class="fa fas fa-cubes"></i>تصفح المشاريع </a></i></li>
+        <li><a href="#"><i class="fa fa-users"></i>ابحث عن مستقلين </a></i></li>
+        <li><a href="#"><i class="fa far fa-image"></i> تصفح معرض الأعمال </a></i></li>
+        <li class="sidebar-menu-items ">
+          <a class="sidebar-menu-item-link">
+            <i class="fa fa-fw fa-cubes"></i>
+            أقسام المشاريع
+          </a>
+          <ul class="sidebar-menu">
+            <li class="sidebar-menu-item ">
+              <a class="" href="https://mostaql.com/projects/business ">
+
+                مشاريع أعمال
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/development ">
+
+                مشاريع برمجة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/engineering-architecture ">
+
+                مشاريع هندسة وعمارة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/design ">
+                مشاريع تصميم
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/marketing ">
+
+                مشاريع تسويق
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/writing-translation ">
+
+                مشاريع كتابة وترجمة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/support ">
+
+                مشاريع دعم ومساعدة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/training ">
+
+                مشاريع تدريب
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fas fa-list"></i> التصنيفات</a></i></li>
+      </ul>
+    </div>
+  </div>
+  <main class="">
+    <h2 class="mb-4">إضافة مشروع</h2>
+    <div class=" row">
+      <div class="col-lg-9 bg-white p-3 form-container">
+        <form action=" " method="post">
+          <div class=" form-block">
+            <label for="project_title" class="form-label">عنوان المشروع</label>
+            <input type="text" name="project_title" id="project_title" class="form-control"
+              placeholder="تحسين ال performance لموقع الكتروني">
+            <p class="text-help">أدرج عنوانا موجزا يصف مشروعك بشكل دقيق.</p>
+          </div>
+          <div class=" form-block">
+            <label for="project_title" class="form-label">وصف المشروع </label>
+            <textarea name="project_title" id="project_title" class="form-control" rows="12"
+              placeholder="تحسين ال performance لموقع الكتروني"></textarea>
+            <p class="text-help">أدرج عنوانا موجزا يصف مشروعك بشكل دقيق.</p>
+          </div>
+          <div class=" form-block">
+            <label for="project_title" class="form-label">المهارات المطلوبة</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <p class="text-help">حدد أهم المهارات المطلوبة لتنفيذ مشروعك.</p>
+          </div>
+          <div class="row">
+            <div class=" form-block col-lg-6">
+              <label for="project_title" class="form-label "> الميزانية المتوقعة </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>50-100 </option>
+                <option value="1">100-250دولار </option>
+                <option value="2">250-500 </option>
+                <option value="3">1000-2500 </option>
+              </select>
+              <p class="text-help">حدد أهم المهارات المطلوبة لتنفيذ مشروعك.</p>
+            </div>
+            <div class=" form-block col-lg-6">
+              <label for="project_title" class="form-label">المدة المتوقعة للتسليم </label>
+              <div class="input-group mb-3">
+                <input type="number" min="0" class="form-control" placeholder="2" aria-label="days"
+                  aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1">ايام</span>
+              </div>
+              <p class="text-help">أدرج عنوانا موجزا يصف مشروعك بشكل دقيق.</p>
+            </div>
+          </div>
+          <button class=" mos-btn-primary rounded-0 d" type="submit">انشر الآن</button>
+        </form>
+      </div>
+      <div class="col-lg-3 d-md-none d-sm-none d-lg-block pe-4">
+        <div class=" hidden-xs hidden-sm pull-left">
+          <div class="project-advantages clr-bluewood  callout  m-t-n-sm">
+            <div class="copy">
+              <h4 class="heada__title">ابدأ بإنجاز مشروعك</h4>
+              <p>
+                تستطيع إنجاز مشروعك بالشكل الذي تريده من خلال مستقل، أدخل تفاصيل المشروع والميزانية والمدة المتوقعة ليتم
+                مراجعته ونشره مجاناً،
+                بعد ذلك سيظهر للمستقلين في صفحة المشاريع ويقدموا عروضهم عليه لتختار العرض الأنسب لك ويبدأ المستقل بتنفيذ
+                المشروع.
+              </p>
+              <br>
+              <h4 class="heada__title">موقع مستقل يضمن حقوقك</h4>
+              <p>
+                يقوم موقع مستقل بدور الوسيط بينك وبين المستقل الذي توظفه لتنفيذ مشروعك، فقط بعد انتهاء المستقل من تنفيذ
+                المشروع كاملاً يتم تحويل
+                المبلغ إلى حسابه.
+              </p>
+              <br>
+              <h4 class="heada__title">نصائح للحصول على عمل ناجح</h4>
+              <ul>
+                <li>وضح جميع التفاصيل والمهام المطلوب إنجازها</li>
+                <li>املأ جميع الحقول ووفّر أمثلة لما تريد تنفيذه</li>
+                <li>جزّء المشروع والمهام الكبيرة على عدّة مراحل صغيرة</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div class="bg-white footer-contant">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">مستقل</h4>
+            <ul class="p-0">
+              <li><a href="#">عن مستقل</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+              <li><a href="#">ضمان حقوقك</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+              <li><a href="#">بيان الخصوصية</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">مشاريع</h4>
+            <ul class="p-0">
+              <li><a href="#">مشاريع أعمال</a></li>
+              <li><a href="#">مشاريع برمجة</a></li>
+              <li><a href="#">مشاريع هندسة وعمارة</a></li>
+              <li><a href="#">مشاريع تصميم</a></li>
+              <li><a href="#">مشاريع تسويق</a></li>
+              <li><a href="#">مشاريع كتابة وترجمة</a></li>
+              <li><a href="#">مشاريع دعم ومساعدة</a></li>
+              <li><a href="#">مشاريع تدريب</a></li>
+              <li><a href="#">التصنيفات</a></li>
+
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">روابط</h4>
+            <ul class="p-0">
+              <li><a href="#">مستقل للمؤسسات</a></li>
+              <li><a href="#">ابحث عن عمل</a></li>
+              <li><a href="#">معرض الأعمال</a></li>
+              <li><a href="#">مدونة مستقل</a></li>
+              <li><a href="#">مركز المساعدة</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="footer-social-pay">
+              <div>
+                <h4 class="mb-3">تابع مستقل على</h4>
+                <ul class="p-0 d-flex social-media">
+                  <li>
+                    <a rel href="https://www.facebook.com/MostaqlCom" class="facebook-btn bg-primary "
+                      target="_blank"><i class="fa-brands fa-facebook-f fs-5"></i> </a>
+                  </li>
+                  <li>
+                    <a rel href="https://www.twitter.com/MostaqlCom" class=" twitter-btn" target="_blank"><i
+                        class="fab fab fa-twitter "></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mb-3">وسائل الدفع المتاحة</h4>
+                <ul class="p-0 d-flex payment ">
+                  <li>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row copy-right">
+        <p class="col-lg-6" style="font-size: 12px;">© 2023 حسوب. جميع الحقوق محفوظة.</p>
+        <p class="col-lg-6 text-start" dir="ltr">© 2023 Hsoub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <div class="bottom-nav d-lg-none d-sm-block">
+    <div class="row ">
+      <button title="" class="  fs-5 col-3"><i class="fa fa-home"></i><span class="d-block">الرئيسية</span></button>
+      <button title="" class="  fs-5 col-3"><i class="fa far fas fas fa-user"></i><span
+          class="d-block">حسابي</span></button>
+      <button title="" class="fs-5 col-3"><i class="fa fa-search"></i><span class="d-block">بحث</span></button>
+      <button title="" class="fs-5 col-3"><i class="fa fa-bars"></i><span class="d-block">القائمة</span></button>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="./assets/js/bootstrap.js"></script>
+</body>
+
+</html>

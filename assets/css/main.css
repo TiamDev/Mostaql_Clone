@@ -1,0 +1,313 @@
+:root{
+  --primaryColor: #2386c8;
+}
+@font-face {
+  font-family: "kufi";
+  src: url(/assets/fonts/Noto_Kufi_Arabic/NotoKufiArabic-VariableFont_wght.ttf);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-size:15px;
+  font-family:"Kufi";
+}
+body{
+  background-color: #f3f1f1 !important;
+}
+header{
+  background-color:var(--primaryColor);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+.text-primary{
+  color: var(--primaryColor) !important;
+}
+.d-sm-none{
+  display: none;
+}
+a{
+  text-decoration: none !important;
+}
+h4{
+  font-weight: 400 !important;
+}
+p{
+  color:#505050;
+}
+.btn-outline-white{
+  color:white;
+  border:1px solid rgba(255, 255, 255, 0.544);
+  border-radius: 2px;
+  background-color: transparent;
+  margin: 5px;
+  padding: 10px;
+  text-wrap: nowrap;
+  font-size:14px ;
+}
+.btn-outline-white:hover{
+  background-color: #ffffff;
+  color: var(--primaryColor);
+  border:1px solid rgba(255, 255, 255, 0.544);
+
+  
+}
+.mos-btn-primary{
+  background-color:var(--primaryColor) !important;
+  text-wrap: nowrap;
+  padding-inline: 15px;
+  padding-block: 10px;
+  color: white;
+  border: none;
+}
+.nav-link{
+  font-size: 14px !important;
+  text-wrap: nowrap; 
+}
+.nav-link:hover{
+ cursor: pointer;
+ color: rgb(222, 222, 224) !important;
+}
+.bottom-nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  background-color: white;
+  padding-block: 3px;
+}
+.bottom-nav>div>button{
+  border:none;
+  outline: none;
+  background-color: transparent;
+  color :rgb(61, 61, 61);
+}
+.bottom-nav>div>button>span{
+font-size: 14px;
+}
+.bottom-nav>div>button:hover{
+  color:var(--primaryColor);
+  /* transform: scale(1.1); */
+}
+.offcanvas.offcanvas-end {
+  top: 65px !important;
+  --bs-offcanvas-width: 300px;
+}
+.section-one{
+  background-image: url('https://mostaql.hsoubcdn.com/public/assets/images/landing/header-bg-0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+}
+.section-one>.container>div{
+  flex-direction: column;
+}
+.input-header-box{
+  background-color: white;
+  padding: 8px;
+  display: flex;
+}
+.input-header-box > input{
+border: none;
+outline: none;
+width: -webkit-fill-available;
+}
+  .more-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 80px;
+  }
+
+  .check-icon-li{
+    list-style: none;
+    position: relative;
+    margin:10px 0 30px 20px;
+    
+  }
+  .check-icon-li span{
+    position: absolute;
+    right: -30px;
+  }
+  .section-three ,
+  .section-two,
+  .section-four,
+  .section-six,
+  .section-seven,
+  .section-eight,
+  .section-nine,
+  .footer-contant  {
+    padding-block: 50px;
+  }
+  .features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+.section-five a{
+  color: black !important;
+  text-decoration: none !important;
+ }
+ .thumb{
+  height:90px ;
+ }
+ .section-six,
+ .section-nine{
+background-color: var(--primaryColor) ;
+color: white;
+}
+.section-five a h4:hover{
+  color: var(--primaryColor);
+}
+ .section-six *{
+  padding: 10px;
+}
+
+.white-button{
+  border: none;
+  background-color: white;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+
+}
+.white-button:hover{
+  background-color: transparent;
+  border: 1px solid white;
+  color:white
+}
+.testimonials{
+  padding-block: 35px;
+  display: flex;
+}
+.testimonials-image img{
+  width: 75px;
+  border-radius: 50%;
+}
+.testimonials-content-job-title{
+  color:rgb(146, 146, 146);
+}
+.testimonials-content-name{
+  margin-top: 15px;
+}
+.testimonials-content-link{
+  color:gray ;
+  font-size: 14px;
+  text-decoration: underline !important;
+}
+footer a {
+  text-decoration: none ;
+  color: black;
+}
+footer ul li  {
+ list-style:none ;
+ padding-block: 5px;
+ font-size: 14px;
+}
+.social-media li a{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #f3f1f1;
+ width: 35px;
+ height: 38px ; 
+ margin: 5px;
+
+}
+.social-media li a:hover{
+  opacity: 0.8;
+}
+.facebook-btn{
+  display: block;
+}
+.twitter-btn{
+  background-color: #2386c8;
+}
+.footer-social-pay{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.payment li i{
+  color: rgb(89, 89, 89);
+  font-size: 35px;
+  margin: 5px;
+}
+.copy-right{
+  color: rgb(99, 99, 99);
+  padding-block:30px;
+}
+.offcanvas-menu li {
+ list-style: none;
+ width: 100%;
+ padding: 15px;
+}
+.offcanvas-menu li a{
+  width: 100%;
+  display: block;
+  color:#515151;
+  text-wrap: nowrap;
+
+ }
+ .offcanvas-menu li a:hover{
+  color:var(--primaryColor);
+ }
+ .offcanvas-menu>li>a>i{
+ padding-left: 10px;
+ }
+ .sidebar-menu-item {
+  display: block;
+  overflow: hidden;
+
+}
+.sidebar-active{
+  display: none;
+}
+
+
+/* ############Add Project############# */
+main{
+  padding: 10vh;
+}
+.text-help{
+color: gray;
+font-size: 12px;
+padding: 5px;
+}
+.form-label::after{
+  content: "*";
+  color: red;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: calc(var(--bs-border-width) * -1);
+  border-top-right-radius: 0 ;
+  border-bottom-right-radius: 0 ;
+}
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
+  border-top-left-radius: 0; 
+  border-bottom-left-radius: 0;
+}
+/***********sginup****************/
+.form-group{
+  padding-block: 10px;
+}
+.signup-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container-small {
+  max-width: 768px;
+}
+/***********sginin****************/
+

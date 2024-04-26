@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/vendors/fontawesome-free-6.4.2-web/css/all.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Home</title>
+</head>
+
+<body dir="rtl">
+  <header>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-9 col-md-9 d-sm-none d-md-none d-lg-block">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <button title="offcanvas" class="btn fs-4 text-white" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class="fa far fas fa-bars fs-4"></i></button>
+                <a class="navbar-brand" href="#"> <img src="./assets/images/mostaql-logo-white.svg" alt=""
+                    width="120px"></a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item pe-1">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-plus ms-2 "></i>أضف
+                      مشروع</a>
+                  </li>
+                  <!-- <li class="nav-item pe-1">
+                    <a class="nav-link text-white" href="#"><i class="fa far fa-folder-open ms-2 "></i>مشاريعي</a>
+                  </li> -->
+                  <li class="nav-item pe-1">
+                    <a class="nav-link text-white"><i class="fa fa-users ms-2 "></i>ابحث عن مستقلين</a>
+                  </li>
+                  <li class="nav-item pe-1">
+                    <a class="nav-link text-white"><i class="fa fa-cubes ms-2 "></i>تصفح المشاريع</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-3 d-lg-block d-md-none  d-sm-none ">
+          <div class="h-100 d-flex align-items-center justify-content-between">
+            <button title="search" class="btn text-white fs-5"><i class="fa fa-search"></i></button>
+            <button class=" btn-outline-white  "><i class="fa fa-sign-in ps-1"> </i>دخول
+            </button>
+            <button class=" btn-outline-white"> <i class=" fa fa-user-plus ps-1"></i>
+              حساب جديد</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form action="/search" accept-charset="UTF-8" class="hsoub-search-container" method="get">
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="ابحث عن ..." aria-label="Search"
+            aria-describedby="search-addon" />
+          <!-- <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span> -->
+        </div>
+        <input name="utf8" type="hidden" value="✓">
+      </form>
+
+      <ul class="offcanvas-menu p-0 mt-4">
+        <li><a href="#"><i class="fa  fa-user-plus"></i>حساب جديد</a></i></li>
+        <li><a href="#"><i class="fa fa-sign-in"></i>تسجيل الدخول </a></i></li>
+        <li><a href="#"><i class="fa fas fa-plus"></i>أضف مشروع </a></i></li>
+        <li><a href="#"><i class="fa fas fa-cubes"></i>تصفح المشاريع </a></i></li>
+        <li><a href="#"><i class="fa fa-users"></i>ابحث عن مستقلين </a></i></li>
+        <li><a href="#"><i class="fa far fa-image"></i> تصفح معرض الأعمال </a></i></li>
+        <li class="sidebar-menu-items ">
+          <a class="sidebar-menu-item-link">
+            <i class="fa fa-fw fa-cubes"></i>
+            أقسام المشاريع
+          </a>
+          <ul class="sidebar-menu">
+            <li class="sidebar-menu-item ">
+              <a class="" href="https://mostaql.com/projects/business ">
+
+                مشاريع أعمال
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/development ">
+
+                مشاريع برمجة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/engineering-architecture ">
+
+                مشاريع هندسة وعمارة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/design ">
+
+                مشاريع تصميم
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/marketing ">
+
+                مشاريع تسويق
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/writing-translation ">
+
+                مشاريع كتابة وترجمة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/support ">
+
+                مشاريع دعم ومساعدة
+              </a>
+            </li>
+            <li class="sidebar-menu-item ">
+              <a class="sidebar-menu-item-link" href="https://mostaql.com/projects/training ">
+
+                مشاريع تدريب
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fas fa-list"></i> التصنيفات</a></i></li>
+
+
+
+      </ul>
+
+
+
+
+
+    </div>
+  </div>
+  <!-- section one bak-image -->
+  <section class="section-one">
+    <div class="container   h-100">
+      <div class="d-flex align-items-center justify-content-center h-100  ">
+        <h1 class="text-white">
+          وظف أفضل المستقلين لإنجاز أعمالك عن بعد
+        </h1>
+        <h5 class="text-white my-3">
+          أنجز مشاريعك بسهولة وأمان عبر منصة عمل حر بالعالم العربي
+        </h5>
+
+        <div class="input-header-box col-lg-6 col-sm-12 my-3">
+          <input type="text" class="" placeholder="أدخل عنوان المشروع الذي تريد تنفيذه...">
+          <button class=" mos-btn-primary rounded-0 ">ابدأ مشروعك الان</button>
+        </div>
+        <a href="#" class="btn-outline-white my-3 ">ابحث عن عمل</a>
+        <div class="more-info">
+          <p class="text-white">
+            معلومات أكثر
+          </p>
+          <img src="./assets/images/read-more.svg" width="18px" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- section 2 -->
+  <section class="section-two bg-white">
+    <div class="container">
+      <p class="text-primary fs-3 text-center my-5">هل لديك عمل تريد إنجازه</p>
+      <div class="row ">
+        <div class="box-text col-lg-6 ">
+          <ul>
+            <li class="check-icon-li">
+              <span class="check-icon"><svg width="20" height="20" viewBox="0 0 1792 1792" style="fill: #2386c8;"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                  </path>
+                </svg>
+              </span>
+              <h4>أضف مشروع</h4>
+              <p>
+                أضف تفاصيل المشروع الذي تحتاج إنجازه والمهارات المطلوبة واحصل على عروض المستقلين المتخصصين في دقائق.
+              </p>
+            </li>
+            <li class="check-icon-li">
+              <span class="check-icon"><svg width="20" height="20" viewBox="0 0 1792 1792" style="fill: #2386c8;"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                  </path>
+                </svg>
+              </span>
+              <h4>
+                اختر المستقل المناسب
+              </h4>
+              <p>
+                قارن عروض المستقلين وتصفح ملفاتهم وتقيماتهم وأعمالهم، تفاوض معهم عبر الرسائل واختر الأفضل لتنفيذ مشروعك.
+              </p>
+            </li>
+            <li class="check-icon-li">
+              <span class="check-icon"><svg width="20" height="20" viewBox="0 0 1792 1792" style="fill: #2386c8;"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                  </path>
+                </svg>
+              </span>
+              <h4>استلم المشروع</h4>
+              <p>سيعمل المستقل الذي اخترته على مشروعك ويتابع معك حتى حصولك على نتائج العمل المتفق عليه وتسليم المشروع.
+              </p>
+            </li>
+
+          </ul>
+
+
+
+
+
+          <!-- <li>
+            <span class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+              </svg>
+            </span>
+            <h4>استلم المشروع</h4>
+            <p>سيعمل المستقل الذي اخترته على مشروعك ويتابع معك حتى حصولك على نتائج العمل المتفق عليه وتسليم المشروع.</p>
+          </li> -->
+        </div>
+        <div class="box-video col-lg-6">
+          <!-- <div class=" ratio-16x9"> -->
+          <div class=" ratio-16x9">
+            <iframe width="100%" height="387" src="https://www.youtube.com/embed/seO4l0shva0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- section 3 -->
+
+  <section class="section-three">
+    <div class="container">
+      <p class="text-primary fs-3 text-center my-5">
+        كيف يساعدك مستقل على إنجاز أعمالك </p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <img src="./assets/images/startup.svg" alt="" width="75px">
+            <h4 class="my-3">أنجز أعمالك بسرعة وسهولة</h4>
+            <p class="my-3">انشر مشروعك واترك مهمة تنفيذه لأفضل المستقلين المحترفين</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <div class="thumb">
+              <img src="./assets/images/like.svg" alt="" width="75px">
+            </div>
+            <h4 class="my-3">
+              وظّف أفضل المستقلين </h4>
+            <p class="my-3">
+              تصفح ملفات المستقلين واطلع على مهاراتهم وأعمالهم وتقييمات العملاء واختر الأنسب </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <div class="thumb">
+              <img src="./assets/images/dollar-symbol.svg" alt="" width="75px">
+            </div>
+            <h4 class="my-3">
+              نفذ مشاريعك بتكلفة أقل </h4>
+            <p class="my-3">
+              حدد الميزانية المناسبة لمشروعك واختر من بين المستقلين الخبراء للعمل على إنجاز المطلوب </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <div class="thumb">
+              <img src="./assets/images/laptop.svg" alt="" width="75px">
+            </div>
+            <h4 class="my-3">
+              ادفع بأريحية وأمان </h4>
+            <p class="my-3">
+              ادفع قيمة العمل المطلوب عبر وسائل دفع آمنة مع ضمان كامل لحقوقك المالية </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <div class="thumb">
+              <img src="./assets/images/teamwork.svg" alt="" width="75px">
+            </div>
+            <h4 class="my-3">
+              غطي احتياجاتك من المهارات </h4>
+            <p class="my-3">
+              وظف خبراء في مختلف المجالات ومن مختلف البلدان لتنفيذ المشاريع التي تحتاجها </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="features ">
+            <div class="thumb">
+              <img src="./assets/images/handshake.svg" alt="" width="75px">
+            </div>
+            <h4 class="my-3">
+              اضمن حقوقك
+            </h4>
+            <p class="my-3">
+              احفظ حقوقك بشكل كامل حيث يقوم موقع مستقل بدور الوسيط بينك وبين المستقل </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 4 -->
+  <section class="section-four bg-white">
+    <div class="container">
+      <p class="text-primary fs-3 text-center my-5"> كيف نضمن حقوقك وجودة أعمالك</p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">مستقلون محترفون</h4>
+          <p class="my-3">العمل مع مستقلين خبراء في كافة المجالات التي تبحث عنها ببيانات شخصية وهويات موثقة.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">ملفات شخصية متكاملة</h4>
+          <p class="my-3">ملفات شخصية للمستقلين تعرض أعمالهم وتقيماتهم السابقة ونبذة عن أهم خبراتهم ومهاراتهم.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">تواصل مسبق</h4>
+          <p class="my-3">تواصل مع المستقلين عبر المحادثات للتفاوض وتوضيح الاتفاق قبل التوظيف.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">حفظ حقوقك المالية</h4>
+          <p class="my-3">بقاء قيمة الصفقة في رصيد حسابك بموقع مستقل إلى أن تستلم المشروع بنفسك.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">ضمان الحقوق</h4>
+          <p class="my-3">استعادة قيمة المشروع كاملة إن لم تستلم العمل المتفق عليه.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h4 class="my-4">دعم ومساعدة</h4>
+          <p class="my-3">فريقنا متاح لمساعدتك على مدار الساعة بجميع مراحل المشروع.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section 5 -->
+
+  <section class="section-five">
+    <div class="container">
+      <p class="text-primary fs-3 text-center mt-5">اعثر على مستقلين محترفين في كافة المجالات</p>
+      <p class=" text-center my-4">غطي احتياجاتك من المهارات في جميع التخصصات</p>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/clients.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">أعمال وخدمات استشارية وإدارية</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/coding.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                برمجة, تطوير وبناء المواقع والتطبيقات</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/noun-settings.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                هندسة, عمارة وتصميم داخلي</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/movies.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                تصميم, فيديو وصوتيات</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/line-graph.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                تسويق إلكتروني ومبيعات</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/document.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                كتابة, تحرير, ترجمة ولغات</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/call-center.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                دعم, مساعدة وإدخال بيانات</h4>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#">
+            <div class="features mb-5">
+              <div class="thumb">
+                <img src="./assets/images/search-web.svg" alt="" width="85px">
+              </div>
+              <h4 class=" my-4">
+                تدريب, تعليم ومساعدة عن بعد</h4>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section 6 -->
+  <section class="section-six">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <img src="./assets/images/dashboard.png" width="100%" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-12 p-4">
+          <h3>
+            مستقل للمؤسسات
+          </h3>
+          <h5>حل متقدم للشركات والمؤسسات لتوظيف المستقلين وإدارة المشاريع</h5>
+          <ul class="me-4">
+            <li>مكن فريقك من توظيف المستقلين لتلبية متطلباتهم من المهارات</li>
+            <li>انشئ نموذج التوظيف المناسب لسير العمل في شركتك</li>
+            <li>تعاون مع الفريق على إدارة المشاريع والمستقلين من مكان واحد</li>
+          </ul>
+          <button class="white-button ">المزيد عن مستقل للمؤسسات</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- section 7 -->
+  <div class="section-seven bg-white">
+    <div class="container">
+      <p class="text-primary fs-3 text-center mt-5 mb-4">
+        ماذا قال عملاؤنا عنا</p>
+
+      <div class="row">
+        <div class="col-md-6 testimonials">
+          <div class="testimonials-image ps-3">
+            <img src="./assets/images/mdarrab.jpg" alt="">
+          </div>
+          <div class="testimonials-content ">
+            <p class="testimonials-content-name">مازن الضراب</p>
+            <p class="testimonials-content-job-title">الرئيس التنفيذي للنمو زد</p>
+            <p class="testimonials-content-description">علاقتي بمستقل متعلقة بصورة رئيسة بزيادة الإنتاجية، فإذا أحسنت
+              استخدام
+              مستقل وتوظيف المستقلين ستتفاجئ
+              بارتفاع حجم الإنتاجية في شركتك، لأنك ستكتشف أنك لا تملك يدين فقط بل أيادٍ كثيرة تنجز أعمالك، فالقيمة التي
+              أضافها لي مستقل هي إنجاز مهام أكثر في وقت أقل.</p>
+            <a href="#" class="testimonials-content-link">تعرف على القصة كاملة</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 testimonials">
+          <div class="testimonials-image ps-3">
+            <img src="./assets/images/almoqy.jpg" alt="">
+          </div>
+          <div class="testimonials-content ">
+            <p class="testimonials-content-name">سعد الدوسري</p>
+            <p class="testimonials-content-job-title">مؤسس شركة أوفتو</p>
+            <p class="testimonials-content-description">
+              ما يميز مستقل عن غيره هو بساطته وسهولة الاستخدام، ما في تعقيدات كتير مثل الموجودة في المواقع العالمية،
+              وفكرة أن يكون هنالك مستقل أتواصل معه باللغة العربية ونشترك في ثقافة واحدة. شيء عظيم.</p>
+            <a href="#" class="testimonials-content-link">تعرف على القصة كاملة</a>
+          </div>
+        </div>
+        <div class="col-md-6 testimonials">
+          <div class="testimonials-image ps-3">
+            <img src="./assets/images/HAlghusn.jpg" alt="">
+          </div>
+          <div class="testimonials-content ">
+            <p class="testimonials-content-name">حمود الغصن </p>
+            <p class="testimonials-content-job-title">مؤسس مستر مندوب</p>
+            <p class="testimonials-content-description">
+              بنيت مشروعي بالكامل اعتمادًا على مستقل، إذ استطعنا أن نُخرِج النموذج الأوليّ للمشروع بسرعة وبجودة عالية،
+              واستمريت في التوظيف من مستقل حتى حصلت شركتي مستر مندوب على أول استثمار بمبلغ مليون ريال، بعد ذلك توجهت
+              الشركة إلى التوظيف وبناء فريقها المحلي.</p>
+            <a href="#" class="testimonials-content-link">تعرف على القصة كاملة</a>
+          </div>
+        </div>
+        <div class="col-md-6 testimonials ">
+          <div class="testimonials-image ps-3">
+            <img src="./assets/images/aaymesh.png" alt="">
+          </div>
+          <div class="testimonials-content ">
+            <p class="testimonials-content-name">
+              عبد اللطيف ايمش </p>
+            <p class="testimonials-content-job-title">مدير أكاديمية حسوب</p>
+            <p class="testimonials-content-description">
+              تخطت المقالات الموجودة على أكاديمية حسوب أكثر من 5000 مقالة، كما أن لديها رصيدًا من الكتب المجانية تجاوز
+              الـ 20 كتابًا، نتابع تفاصيل العمل على المقالات والكتب عبر منصة مستقل، حيث تجري كل عمليات توظيف المستقلين
+              سواءً أكانوا كتّابًا أو مترجمين أو مصممين أو مدربين.</p>
+            <a href="#" class="testimonials-content-link">تعرف على القصة كاملة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 8 -->
+  <div class="section-eight">
+    <div class="container">
+      <p class="text-primary fs-3 text-center mt-5 mb-4">
+        الأسئلة الشائعة
+      </p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button text-end" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              ما هو مستقل؟
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              مستقل هو منصة عربية تتيح لأصحاب المشاريع والشركات التعاقد مع مستقلين محترفين للقيام بأعمالهم، وبنفس الوقت
+              يتيح للمستقلين المحترفين مكانًا لإيجاد مشاريع يعملون عليها ويكسبون من خلالها.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button text-end collapsed " type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              كيف أستفيد منه؟
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              في منصة مستقل تستطيع إضافة مشروعك كإنشاء موقع ويب أو تطبيق جوال أو حتى تصميم شعار وتلقي عروض من المستقلين
+              المحترفين المهتمين بالعمل عليه لتقارن بين العروض وتختار أفضلها، ثم تقوم بتوظيف المستقل صاحب أفضل عرض
+              وتتولى المتابعة معه حتى إتمام تنفيذ مشروعك، كما يمكنك البحث بنفسك عن أفضل المستقلين وتعرض عليهم مشروعك
+              بشكل مباشر للعمل عليه.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button text-end collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              كيف يضمن موقع مستقل حقوقي؟
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              موقع مستقل يضمن لك حقك المالي بشكل كامل فلا داع ﻷي قلق، كن مطمئنا عند إنشاء أي مشاريع جديدة أو تقديم عروضك
+              على المشاريع المعروضة في الموقع، حيث يقوم موقع مستقل بدور الوسيط بين صاحب المشروع وبين المستقل ويحمي حقوق
+              الطرفين المالية في حال الالتزام بشروط موقع مستقل وبنود الضمان وتوضيح الاتفاق تماما.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFore">
+            <button class="accordion-button text-end collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFore" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFore">
+              ما هي المجالات التي يمكنني أن أوظف فيها مستقلين عن بعد؟
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFore" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-collapseFore">
+            <div class="accordion-body">
+              تلجأ الشركات إلى توظيف العاملين عن بُعد في مختلف التخصصات، منها على سبيل المثال لا الحصر العاملين في مجال
+              البرمجة، وتحرير النصوص، والتسويق الإلكتروني، والتصميم والإعلانات، والترجمة،وادخال البيانات، وكتابة
+              المقالات، وبعض أعمال العلاقات العامة عبر الإنترنت، وتصميم المواقع الإلكترونية وإدارة المواقع الإلكترونية،
+              والدراسات والتحاليل السوقية وغيرها من التخصصات.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button text-end collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive">
+              ماذا سيحدث بعد نشر مشروعي على مستقل؟
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-collapseFive">
+            <div class="accordion-body">
+              بعد نشر مشروعك، سيبقى معلقًا بانتظار المراجعة من قبل الدعم الفني لموقع مستقل. وبعدها إمّا تتم الموافقة
+              عليه فيصلك إشعار بالموافقة ثم يظهر المشروع لجميع المستقلين للتقدم بعروضهم عليه، أو يتم رفضه مع ذكر الأسباب
+              التي أدت لذلك لكي تقوم بتعديله وإرساله من جديد للمراجعة والقبول.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 9 -->
+  <div class="section-nine">
+    <div class="text-center">
+      <h3>هل أنت جاهز لبدء مشروعك؟</h3>
+      <button class="white-button p-3 m-4">
+        ابدأ مشروعك الآن</button>
+
+    </div>
+  </div>
+  <footer>
+    <div class="bg-white footer-contant">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">مستقل</h4>
+            <ul class="p-0">
+              <li><a href="#">عن مستقل</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+              <li><a href="#">ضمان حقوقك</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+              <li><a href="#">بيان الخصوصية</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">مشاريع</h4>
+            <ul class="p-0">
+              <li><a href="#">مشاريع أعمال</a></li>
+              <li><a href="#">مشاريع برمجة</a></li>
+              <li><a href="#">مشاريع هندسة وعمارة</a></li>
+              <li><a href="#">مشاريع تصميم</a></li>
+              <li><a href="#">مشاريع تسويق</a></li>
+              <li><a href="#">مشاريع كتابة وترجمة</a></li>
+              <li><a href="#">مشاريع دعم ومساعدة</a></li>
+              <li><a href="#">مشاريع تدريب</a></li>
+              <li><a href="#">التصنيفات</a></li>
+
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h4 class="mb-3">روابط</h4>
+            <ul class="p-0">
+              <li><a href="#">مستقل للمؤسسات</a></li>
+              <li><a href="#">ابحث عن عمل</a></li>
+              <li><a href="#">معرض الأعمال</a></li>
+              <li><a href="#">مدونة مستقل</a></li>
+              <li><a href="#">مركز المساعدة</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <div class="footer-social-pay">
+              <div>
+                <h4 class="mb-3">تابع مستقل على</h4>
+                <ul class="p-0 d-flex social-media">
+                  <li>
+                    <a rel href="https://www.facebook.com/MostaqlCom" class="facebook-btn bg-primary "
+                      target="_blank"><i class="fa-brands fa-facebook-f fs-5"></i> </a>
+                  </li>
+                  <li>
+                    <a rel href="https://www.twitter.com/MostaqlCom" class=" twitter-btn" target="_blank"><i
+                        class="fab fab fa-twitter "></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mb-3">وسائل الدفع المتاحة</h4>
+                <ul class="p-0 d-flex payment ">
+                  <li>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row copy-right">
+        <p class="col-lg-6" style="font-size: 12px;">© 2023 حسوب. جميع الحقوق محفوظة.</p>
+        <p class="col-lg-6 text-start" dir="ltr">© 2023 Hsoub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <div class="bottom-nav d-lg-none d-sm-block">
+    <div class="row ">
+      <button title="" class="  fs-5 col-3"><i class="fa fa-home"></i><span class="d-block">الرئيسية</span></button>
+      <button title="" class="  fs-5 col-3"><i class="fa far fas fas fa-user"></i><span
+          class="d-block">حسابي</span></button>
+      <button title="" class="fs-5 col-3"><i class="fa fa-search"></i><span class="d-block">بحث</span></button>
+      <button title="" class="fs-5 col-3"><i class="fa fa-bars"></i><span class="d-block">القائمة</span></button>
+
+    </div>
+  </div>
+
+
+
+  <script>
+    let sidebar_menu_items = document.getElementsByClassName("sidebar-menu-items")[0];
+    let sidebar_menu = document.getElementsByClassName('sidebar-menu')[0];
+    sidebar_menu_items.addEventListener('click', function () {
+      sidebar_menu.classList.toggle("sidebar-active")
+
+    });
+  </script>
+
+
+  <script src="./assets/js/bootstrap.js"></script>
+</body>
+
+</html>
